@@ -1,5 +1,7 @@
 # Evidence Helper
 # Quick Start
+![Quick Start GIF](quick_start.gif)
+
 1. `pip install -r requirements.txt`
 2. `python main.py`
 3. select your video

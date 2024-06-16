@@ -19,6 +19,7 @@ def zip_screenshots(video_dir):
         for file in files:
             if file.endswith(".png"):
                 images.append(os.path.join(root, file))
+
     zip_path = os.path.join(video_dir, f"{FORMATTED_ZIP_FILENAME}.zip")
     with ZipFile(zip_path, 'w') as zip:
         for image in images:
@@ -118,6 +119,7 @@ def main(video_path):
             # toggle freeze/unfreezed
             freeze = not freeze
             frozen_screenshot_count = 0
+            print(f"freeze: {freeze}")
 
     cap.release()
     cv2.destroyAllWindows()
